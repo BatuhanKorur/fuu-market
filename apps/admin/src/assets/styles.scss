@@ -1,0 +1,8 @@
+@import 'css/theme';
+@import 'css/globals';
+@tailwind base;
+@layer base {
+  @include theme;
+}
+@tailwind components;
+@tailwind utilities;

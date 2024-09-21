@@ -1,0 +1,6 @@
+{
+  "extends": "@fuu/tsconfig/react.json",
+  "include": [
+    "vite.config.ts"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "name": "fuu-admin",
+  "description": "Admin panel for fuu-market built with react and typescript.",
+  "author": "Batuhan Korur <mail@batuhan.io> (https://batuhan.io)",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.2",
+    "zustand": "^5.0.0-rc.2",
+    "@phosphor-icons/react": "^2.1.7"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "@fuu/tsconfig": "workspace:*",
+    "@fuu/ui": "workspace:*",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "sass": "^1.79.3",
+    "tailwindcss": "^3.4.12",
+    "typescript": "^5.6.2",
+    "vite": "^5.4.7",
+    "cva": "1.0.0-beta.1",
+    "tailwind-merge": "^2.5.2"
+  }
+}

@@ -1,0 +1,17 @@
+@mixin theme {
+  :root {
+    --background: 230 50% 98%;
+    --foreground: 230 10% 10%;
+
+    --border: 230 10% 90%;
+    --border-light: 230 10% 95%;
+  }
+
+  .dark {
+    --background: 230 10% 12%;
+    --foreground: 0 0 98%;
+
+    --border: 230 10% 70%;
+    --border-light: 230 10% 30%;
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "extends": "@fuu/tsconfig/react.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "./dist",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "allowImportingTsExtensions": true
+  },
+  "include": [
+    "vite.config.ts",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.d.ts"
+  ],
+  "exclude": ["node_modules", "dist"]
+}

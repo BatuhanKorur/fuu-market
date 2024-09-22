@@ -4,11 +4,14 @@ import { cva, cx, type VariantProps } from '../lib'
 const Styles = cva({
   base: [
     'inline-flex items-center justify-center whitespace-nowrap rounded-md',
+    'transition duration-150 ease-in-out',
   ],
   variants: {
     color: {
-      primary: 'text-white bg-blue-500',
-      secondary: 'text-blue-500 bg-white',
+      primary: 'bg-primary text-foreground',
+      secondary: 'bg-secondary text-foreground',
+      ghost: 'bg-transparent hover:bg-muted',
+      outlined: 'border border-border hover:bg-muted',
     },
     size: {
       sm: 'px-2.5 py-1.5 text-sm',

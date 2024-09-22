@@ -8,10 +8,21 @@
   }
 
   .dark {
-    --background: 230 10% 12%;
+    --background: 230 8% 10%;
     --foreground: 0 0 98%;
 
-    --border: 230 10% 70%;
-    --border-light: 230 10% 30%;
+    --border: 240 5% 25%;
+    --border-light: 240 7% 35%;
+
+    --muted: 240 10% 20%;
+    --muted-foreground: 230 10% 90%;
+
+    --primary: 225 85% 50%;
+    --primary-background: 220 95% 15%;
+    --primary-foreground: 230 10% 10%;
+
+    --secondary: 240 8% 16%;
+    --secondary-background: 230 50% 98%;
+    --secondary-foreground: 230 10% 10%;
   }
 }

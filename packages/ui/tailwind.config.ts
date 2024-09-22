@@ -1,7 +1,7 @@
 import * as twAnimate from 'tailwindcss-animate'
 
 const config = {
-  darkMode: 'selector',
+  darkMode: ['selector', '[data-mode="dark"]'],
   content: [
     './pages/**/*.{ts,tsx,js,jsx,html}',
     './components/**/*.{ts,tsx,js,jsx,html}',
@@ -19,6 +19,23 @@ const config = {
         border: {
           DEFAULT: 'hsl(var(--border))',
           light: 'hsl(var(--border-light))',
+        },
+
+        muted: {
+          DEFAULT: 'hsl(var(--muted))',
+          foreground: 'hsl(var(--muted-light))',
+        },
+
+        primary: {
+          DEFAULT: 'hsl(var(--primary))',
+          background: 'hsl(var(--primary-background))',
+          foreground: 'hsl(var(--primary-foreground))',
+        },
+
+        secondary: {
+          DEFAULT: 'hsl(var(--secondary))',
+          background: 'hsl(var(--secondary-background))',
+          foreground: 'hsl(var(--secondary-foreground))',
         },
       },
     },

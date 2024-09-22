@@ -105,6 +105,9 @@ importers:
       '@fuu/tsconfig':
         specifier: workspace:*
         version: link:../../packages/tsconfig
+      '@phosphor-icons/react':
+        specifier: ^2.1.7
+        version: 2.1.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@storybook/addon-essentials':
         specifier: ^8.3.2
         version: 8.3.2(storybook@8.3.2)
@@ -114,9 +117,9 @@ importers:
       '@storybook/addon-links':
         specifier: ^8.3.2
         version: 8.3.2(react@18.3.1)(storybook@8.3.2)
-      '@storybook/addon-onboarding':
+      '@storybook/addon-themes':
         specifier: ^8.3.2
-        version: 8.3.2(react@18.3.1)(storybook@8.3.2)
+        version: 8.3.2(storybook@8.3.2)
       '@storybook/blocks':
         specifier: ^8.3.2
         version: 8.3.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.3.2)
@@ -204,6 +207,9 @@ importers:
       '@fuu/types':
         specifier: workspace:*
         version: link:../types
+      '@phosphor-icons/react':
+        specifier: ^2.1.7
+        version: 2.1.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       autoprefixer:
         specifier: ^10.4.20
         version: 10.4.20(postcss@8.4.47)
@@ -938,13 +944,13 @@ packages:
     peerDependencies:
       storybook: ^8.3.2
 
-  '@storybook/addon-onboarding@8.3.2':
-    resolution: {integrity: sha512-IuxietU0i+8L6CgFJNSEi9XyPR96P3oQE1Dp2GYDO6PucmEgZEUCgEJ2w7YxTnI5eGJ7+SpHKkPRHVWfqDjvgA==}
+  '@storybook/addon-outline@8.3.2':
+    resolution: {integrity: sha512-VxUYCHPCZQDwnj/9U4d6QLsfGi9wHGO0hOENjC5ZCwzMNCq6t7XNRToSsq4zUPucH5XKaQW2vyTdbNdUQiki4Q==}
     peerDependencies:
       storybook: ^8.3.2
 
-  '@storybook/addon-outline@8.3.2':
-    resolution: {integrity: sha512-VxUYCHPCZQDwnj/9U4d6QLsfGi9wHGO0hOENjC5ZCwzMNCq6t7XNRToSsq4zUPucH5XKaQW2vyTdbNdUQiki4Q==}
+  '@storybook/addon-themes@8.3.2':
+    resolution: {integrity: sha512-gCxKTFDSdDCb1jRotJmejjHQ0ZpQuwnNQp84xarqjZWbepQvdaucgxcqaL9jbRCvN3s/wG/qg04Bw3hykuVVgw==}
     peerDependencies:
       storybook: ^8.3.2
 
@@ -3997,16 +4003,14 @@ snapshots:
       storybook: 8.3.2
       tiny-invariant: 1.3.3
 
-  '@storybook/addon-onboarding@8.3.2(react@18.3.1)(storybook@8.3.2)':
-    dependencies:
-      react-confetti: 6.1.0(react@18.3.1)
-      storybook: 8.3.2
-    transitivePeerDependencies:
-      - react
-
   '@storybook/addon-outline@8.3.2(storybook@8.3.2)':
     dependencies:
       '@storybook/global': 5.0.0
+      storybook: 8.3.2
+      ts-dedent: 2.2.0
+
+  '@storybook/addon-themes@8.3.2(storybook@8.3.2)':
+    dependencies:
       storybook: 8.3.2
       ts-dedent: 2.2.0
 

@@ -1,26 +1,31 @@
 import { forwardRef, ComponentPropsWithRef } from 'react'
-import { cva, cx, type VariantProps } from '../lib'
+import { cva, cx, type VariantProps, focusWithin } from '../lib'
 
 const Styles = cva({
   base: [
-    'inline-flex items-center justify-center whitespace-nowrap rounded-md',
-    'transition duration-150 ease-in-out',
+    'inline-flex-center trans-150 whitespace-nowrap rounded-md',
+    focusWithin,
   ],
   variants: {
     color: {
-      primary: 'bg-primary text-foreground',
+      primary: 'bg-primary text-white hover:brightness-90',
       secondary: 'bg-secondary text-foreground',
       ghost: 'bg-transparent hover:bg-muted',
       outlined: 'border border-border hover:bg-muted',
+      red: 'bg-red',
+      orange: 'bg-orange',
+      green: 'bg-green',
     },
     size: {
-      sm: 'px-2.5 py-1.5 text-sm',
-      md: 'px-3 py-2 text-sm',
-      lg: 'px-4 py-2 text-base',
+      sm: 'h-[36px] px-3 text-sm',
+      md: 'h-[40px] px-3.5 text-base font-[475]',
+      lg: 'h-[46px] px-5 text-md',
     },
     icon: {
       none: '',
       only: '',
+      left: '',
+      right: '',
     },
   },
   compoundVariants: [

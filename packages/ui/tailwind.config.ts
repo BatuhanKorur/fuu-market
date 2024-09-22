@@ -1,20 +1,36 @@
 import * as twAnimate from 'tailwindcss-animate'
+// @ts-ignore
+import flexPlugin from './tailwind/flex.plugin.js'
+// @ts-ignore
+import transitionPlugin from './tailwind/transition.plugin.js'
 
 const config = {
   darkMode: ['selector', '[data-mode="dark"]'],
   content: [
-    './pages/**/*.{ts,tsx,js,jsx,html}',
-    './components/**/*.{ts,tsx,js,jsx,html}',
-    './app/**/*.{ts,tsx,js,jsx,html}',
-    './src/**/*.{ts,tsx,js,jsx,html}',
-    '../../packages/ui/**/*.{ts,tsx}',
+    '../../packages/ui/components/**/*.{ts,tsx}',
     '../../apps/storybook/**/*.{ts,tsx}',
+    '../../apps/admin/src/**/*.{ts,tsx}',
   ],
   theme: {
+    fontFamily: {
+      sans: ['Inter', 'Helvetica', 'sans-serif'],
+    },
     extend: {
+      fontSize: {
+        '2xs': ['0.75rem'],
+        'xs': ['0.825rem'],
+        'sm': ['0.875rem'],
+        'base': ['0.9rem'],
+        'md': ['1rem'],
+        'lg': ['1.1rem'],
+        'xl': ['1.2rem'],
+        '2xl': ['1.35rem'],
+        '3xl': ['1.5rem'],
+      },
       colors: {
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
+        ring: 'hsl(var(--ring))',
 
         border: {
           DEFAULT: 'hsl(var(--border))',
@@ -37,11 +53,31 @@ const config = {
           background: 'hsl(var(--secondary-background))',
           foreground: 'hsl(var(--secondary-foreground))',
         },
+
+        red: {
+          DEFAULT: 'hsl(var(--red))',
+          background: 'hsl(var(--red-background))',
+          foreground: 'hsl(var(--red-foreground))',
+        },
+
+        orange: {
+          DEFAULT: 'hsl(var(--orange))',
+          background: 'hsl(var(--orange-background))',
+          foreground: 'hsl(var(--orange-foreground))',
+        },
+
+        green: {
+          DEFAULT: 'hsl(var(--green))',
+          background: 'hsl(var(--green-background))',
+          foreground: 'hsl(var(--green-foreground))',
+        },
       },
     },
   },
   plugins: [
     twAnimate,
+    flexPlugin,
+    transitionPlugin,
   ],
 }
 

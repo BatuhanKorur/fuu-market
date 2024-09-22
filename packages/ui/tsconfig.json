@@ -1,15 +1,16 @@
 {
   "extends": "@fuu/tsconfig/react.json",
   "compilerOptions": {
+    "esModuleInterop": true,
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
-    },
+    }
   },
   "include": [
-    "components/**/*.ts",
-    "components/**/*.tsx",
-    "lib/**/*.ts"
+    "src/components/**/*.ts",
+    "src/components/**/*.tsx",
+    "src/lib/**/*.ts"
   ],
   "exclude": ["node_modules"],
   "jsxImportSource": "react"

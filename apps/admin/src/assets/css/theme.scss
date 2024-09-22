@@ -5,11 +5,14 @@
 
     --border: 230 10% 90%;
     --border-light: 230 10% 95%;
+
+    --primary: 230 100% 45%;
   }
 
   .dark {
     --background: 230 8% 10%;
     --foreground: 0 0 98%;
+    --ring: 225 50% 30%;
 
     --border: 240 5% 25%;
     --border-light: 240 7% 35%;
@@ -17,12 +20,25 @@
     --muted: 240 10% 20%;
     --muted-foreground: 230 10% 90%;
 
-    --primary: 225 85% 50%;
-    --primary-background: 220 95% 15%;
-    --primary-foreground: 230 10% 10%;
+
+    --primary: 225 67% 50%;
+    --primary-background: 220 35% 20%;
+    --primary-foreground: 220 90% 70%;
 
     --secondary: 240 8% 16%;
-    --secondary-background: 230 50% 98%;
-    --secondary-foreground: 230 10% 10%;
+    --secondary-background: 240 9.5% 18%;
+    --secondary-foreground: 230 10% 95%;
+
+    --red: 0 90% 55%;
+    --red-background: 340 20% 16%;
+    --red-foreground: 340 90% 70%;
+
+    --orange: 37 90% 55%;
+    --orange-background: 12 26% 15%;
+    --orange-foreground: 27 94% 61%;
+
+    --green: 130 80% 40%;
+    --green-background: 170 30% 13%;
+    --green-foreground: 155 63% 54%;
   }
 }

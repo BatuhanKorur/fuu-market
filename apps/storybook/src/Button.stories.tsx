@@ -11,7 +11,7 @@ const meta = {
   tags: ['autodocs'],
   argTypes: {
     color: {
-      options: ['primary', 'secondary', 'ghost', 'outlined'],
+      options: ['primary', 'secondary', 'ghost', 'outlined', 'red', 'orange', 'green'],
       control: {
         type: 'select',
       },
@@ -23,7 +23,7 @@ const meta = {
       },
     },
     icon: {
-      options: ['none', 'only'],
+      options: ['none', 'only', 'left', 'right'],
       control: {
         type: 'select',
       },

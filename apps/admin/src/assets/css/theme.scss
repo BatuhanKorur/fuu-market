@@ -12,20 +12,23 @@
   .dark {
     --background: 230 8% 10%;
     --foreground: 0 0 98%;
-    --ring: 225 50% 30%;
 
+    --muted: 240 10% 20%;
+    --muted-foreground: 240 10% 40%;
+
+    --popover: 240 5% 8%;
+    --ring: 225 50% 30%;
     --border: 240 5% 25%;
     --border-light: 240 7% 35%;
 
-    --muted: 240 10% 20%;
-    --muted-foreground: 230 10% 90%;
+
 
 
     --primary: 225 67% 50%;
     --primary-background: 220 35% 20%;
     --primary-foreground: 220 90% 70%;
 
-    --secondary: 240 8% 16%;
+    --secondary: 230 10% 22%;
     --secondary-background: 240 9.5% 18%;
     --secondary-foreground: 230 10% 95%;
 

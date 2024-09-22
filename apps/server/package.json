@@ -1,9 +1,30 @@
 {
-  "name": "server",
+  "name": "fuu-server",
+  "description": "Server for fuu-market built with express and typescript.",
+  "author": "Batuhan Korur <mail@batuhan.io> (https://batuhan.io)",
   "version": "1.0.0",
-  "description": "",
+  "type": "module",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "dev": "tsx watch --env-file .env app/server.ts"
   },
-  "private": true
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "mongodb": "^6.9.0",
+    "mongoose": "^8.6.3",
+    "morgan": "^1.10.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@fuu/utils": "workspace:*",
+    "@fuu/types": "workspace:*",
+    "@fuu/tsconfig": "workspace:*",
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.15",
+    "ts-node": "^10.4.0",
+    "typescript": "^5.6.2",
+    "tsx": "^4.19.1"
+  }
 }

@@ -29,3 +29,5 @@
 **/*.pem
 **/.vscode
 **/.idea
+
+apps/server/storage/uploads

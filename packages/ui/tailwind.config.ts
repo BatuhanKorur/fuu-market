@@ -20,7 +20,9 @@ const config = {
         '2xs': ['0.75rem'],
         'xs': ['0.825rem'],
         'sm': ['0.875rem'],
-        'base': ['0.9rem'],
+        'base': ['0.9rem', {
+          letterSpacing: '0.01em',
+        }],
         'md': ['1rem'],
         'lg': ['1.1rem'],
         'xl': ['1.2rem'],
@@ -30,7 +32,10 @@ const config = {
       colors: {
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
-        ring: 'hsl(var(--ring))',
+
+        ring: {
+          DEFAULT: 'hsl(var(--ring))',
+        },
 
         border: {
           DEFAULT: 'hsl(var(--border))',
@@ -39,7 +44,11 @@ const config = {
 
         muted: {
           DEFAULT: 'hsl(var(--muted))',
-          foreground: 'hsl(var(--muted-light))',
+          foreground: 'hsl(var(--muted-foreground))',
+        },
+
+        popover: {
+          DEFAULT: 'hsl(var(--popover))',
         },
 
         primary: {
@@ -71,6 +80,20 @@ const config = {
           background: 'hsl(var(--green-background))',
           foreground: 'hsl(var(--green-foreground))',
         },
+      },
+      keyframes: {
+        'accordion-down': {
+          from: { height: '0' },
+          to: { height: 'var(--radix-accordion-content-height)' },
+        },
+        'accordion-up': {
+          from: { height: 'var(--radix-accordion-content-height)' },
+          to: { height: '0' },
+        },
+      },
+      animation: {
+        'accordion-down': 'accordion-down 0.2s ease-out',
+        'accordion-up': 'accordion-up 0.2s ease-out',
       },
     },
   },

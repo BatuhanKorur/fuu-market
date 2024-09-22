@@ -15,7 +15,7 @@ export function ThemeButton() {
   const toggle = useStore(state => state.toggleTheme)
   useEffect(() => setTheme(theme), [theme])
   return (
-    <Button icon="only" onClick={toggle}>
+    <Button icon="only" color="ghost" onClick={toggle}>
       {theme === Theme.DARK ? <Moon /> : <Sun />}
     </Button>
   )

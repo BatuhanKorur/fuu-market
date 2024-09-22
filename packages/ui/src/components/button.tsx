@@ -32,17 +32,17 @@ const Styles = cva({
     {
       icon: 'only',
       size: 'sm',
-      class: 'size-[2rem] px-0',
+      class: 'p-0 size-7 [&>svg]:size-4',
     },
     {
       icon: 'only',
       size: 'md',
-      class: 'p-0 size-[2.25rem] [&>svg]:size-[1.25rem]',
+      class: 'p-0 size-9 [&>svg]:size-[1.25rem]',
     },
     {
       icon: 'only',
       size: 'lg',
-      class: 'size-[3rem] px-0',
+      class: 'size-10 px-0',
     },
   ],
   defaultVariants: {

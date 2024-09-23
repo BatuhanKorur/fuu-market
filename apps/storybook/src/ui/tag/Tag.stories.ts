@@ -1,9 +1,9 @@
-import type { Meta, StoryObj } from '@storybook/react'
+import { type Meta, type StoryObj } from '@storybook/react'
 import { Tag, TagVariants } from '@fuu/ui'
 
-const meta = {
-  title: 'UI/Tag',
+const meta: Meta<typeof Tag> = {
   component: Tag,
+  tags: ['autodocs'],
   parameters: {
     layout: 'centered',
   },
@@ -17,16 +17,16 @@ const meta = {
     size: {
       options: Object.keys(TagVariants.size),
       control: {
-        type: 'Select',
+        type: 'select',
       },
     },
   },
-} satisfies Meta<typeof Tag>
+}
 export default meta
 
 type Story = StoryObj<typeof meta>
 
-export const Default: Story = {
+export const Primary: Story = {
   args: {
     color: 'primary',
   },

@@ -7,8 +7,8 @@ import transitionPlugin from './tailwind/transition.plugin.js'
 const config = {
   darkMode: ['selector', '[data-mode="dark"]'],
   content: [
-    '../../packages/ui/components/**/*.{ts,tsx}',
-    '../../apps/storybook/**/*.{ts,tsx}',
+    '../../packages/ui/src/**/*.{ts,tsx}',
+    '../../apps/storybook/.storybook/**/*',
     '../../apps/admin/src/**/*.{ts,tsx}',
   ],
   theme: {
@@ -17,17 +17,21 @@ const config = {
     },
     extend: {
       fontSize: {
-        '2xs': ['0.75rem'],
+        '2xs': ['0.775rem'],
         'xs': ['0.825rem'],
         'sm': ['0.875rem'],
-        'base': ['0.9rem', {
+        'base': ['0.94rem', {
           letterSpacing: '0.01em',
         }],
         'md': ['1rem'],
         'lg': ['1.1rem'],
         'xl': ['1.2rem'],
-        '2xl': ['1.35rem'],
+        '2xl': ['1.315rem'],
         '3xl': ['1.5rem'],
+        '4xl': ['1.75rem'],
+        '5xl': ['2rem'],
+        '6xl': ['2.25rem'],
+        '7xl': ['2.5rem'],
       },
       colors: {
         background: 'hsl(var(--background))',

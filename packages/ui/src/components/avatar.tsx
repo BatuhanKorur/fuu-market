@@ -3,9 +3,9 @@ import { cva, cx, type VariantProps } from '../lib'
 
 export const AvatarVariants = {
   size: {
-    sm: 'size-6',
-    md: 'size-8',
-    lg: 'size-10',
+    sm: 'size-5',
+    md: 'size-7',
+    lg: 'size-9',
   },
   type: {
     rounded: '[&>img]:rounded-full',
@@ -25,18 +25,20 @@ const Styles = cva({
 })
 
 interface AvatarProps extends ComponentPropsWithoutRef<'img'> {
-  className?: string
+  src: string
+  alt?: string
   size?: VariantProps<typeof Styles>['size']
   type?: VariantProps<typeof Styles>['type']
+  className?: string
 }
 
 export const Avatar = forwardRef<HTMLDivElement, AvatarProps>(
-  ({ className, size, type, ...props }, ref) => {
+  ({ src, alt, size, type, className, ...props }, ref) => {
     return (
       <div className={cx(Styles({ size, type }), className)} ref={ref} {...props}>
         <img
-          src="https://avatars.githubusercontent.com/u/3055951?v=4"
-          alt="avatar"
+          src={src}
+          alt={alt || src}
         />
       </div>
     )

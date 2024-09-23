@@ -1,33 +1,35 @@
 import { forwardRef, ComponentPropsWithRef } from 'react'
 import { cva, cx, type VariantProps, focusWithin } from '../lib'
 
+export const ButtonVariants = {
+  color: {
+    primary: 'bg-primary text-white hover:brightness-90',
+    secondary: 'bg-secondary text-foreground',
+    ghost: 'bg-transparent hover:bg-muted',
+    outlined: 'border border-border hover:bg-muted',
+    red: 'bg-red',
+    orange: 'bg-orange',
+    green: 'bg-green',
+  },
+  size: {
+    sm: 'h-[36px] px-3 text-sm',
+    md: 'h-[40px] px-3.5 text-base font-[475]',
+    lg: 'h-[46px] px-5 text-md',
+  },
+  icon: {
+    none: '',
+    only: '',
+    left: '',
+    right: '',
+  },
+}
+
 const Styles = cva({
   base: [
     'inline-flex-center trans-150 whitespace-nowrap rounded-md',
     focusWithin,
   ],
-  variants: {
-    color: {
-      primary: 'bg-primary text-white hover:brightness-90',
-      secondary: 'bg-secondary text-foreground',
-      ghost: 'bg-transparent hover:bg-muted',
-      outlined: 'border border-border hover:bg-muted',
-      red: 'bg-red',
-      orange: 'bg-orange',
-      green: 'bg-green',
-    },
-    size: {
-      sm: 'h-[36px] px-3 text-sm',
-      md: 'h-[40px] px-3.5 text-base font-[475]',
-      lg: 'h-[46px] px-5 text-md',
-    },
-    icon: {
-      none: '',
-      only: '',
-      left: '',
-      right: '',
-    },
-  },
+  variants: ButtonVariants,
   compoundVariants: [
     {
       icon: 'only',
@@ -52,7 +54,7 @@ const Styles = cva({
   },
 })
 
-export interface ButtonProps extends ComponentPropsWithRef<'button'> {
+interface ButtonProps extends ComponentPropsWithRef<'button'> {
   className?: string
   color?: VariantProps<typeof Styles>['color']
   size?: VariantProps<typeof Styles>['size']

@@ -7,7 +7,7 @@ export function Navbar() {
   const { sidebarOpen } = useStore()
   return (
     <div
-      className="border-b flex items-center justify-between z-50"
+      className="border-b flex items-center justify-between z-40"
       style={{
         height: Configs.NAVBAR_HEIGHT,
       }}
@@ -15,10 +15,10 @@ export function Navbar() {
       <div>
         <p>i</p>
       </div>
-      <div className="flex items-center pr-3">
+      <div className="flex items-center pr-3 space-x-2">
         <NotificationsButton />
         <ThemeButton />
-        <ProfileButton />
+        <ProfileButton className="pl-1.5 inline-flex" />
       </div>
     </div>
   )

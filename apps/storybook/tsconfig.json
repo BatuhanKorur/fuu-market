@@ -3,10 +3,13 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]
-    }
+      "@/*": ["src/*"],
+      "@sb/*": [".storybook/*"]
+    },
   },
   "include": [
-    "vite.config.ts"
+    "vite.config.ts",
+    ".storybook/**/*",
+    "src/**/*"
   ]
 }

@@ -10,10 +10,12 @@ import {
 import { Links } from '@/app'
 import { NavLink } from '@/components'
 
-export function ProfileButton() {
+export function ProfileButton({ className }: {
+  className?: string
+}) {
   return (
     <Dropdown>
-      <DropdownTrigger>
+      <DropdownTrigger className={className}>
         <Avatar type="square" />
       </DropdownTrigger>
       <DropdownContent>

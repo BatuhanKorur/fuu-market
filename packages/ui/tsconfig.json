@@ -2,10 +2,6 @@
   "extends": "@fuu/tsconfig/react.json",
   "compilerOptions": {
     "esModuleInterop": true,
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["src/*"]
-    }
   },
   "include": [
     "src/components/**/*.ts",

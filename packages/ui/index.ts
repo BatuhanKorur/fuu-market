@@ -1,7 +1,7 @@
 export { focusWithin } from './src/lib'
 
-export { Avatar } from './src/components/avatar'
-export { Button, type ButtonProps } from './src/components/button'
+export { Avatar, AvatarVariants } from './src/components/avatar'
+export { Button, ButtonVariants } from './src/components/button'
 export { Tag, TagVariants } from './src/components/tag'
 
 export {
@@ -21,3 +21,13 @@ export {
   DropdownSeparator,
   DropdownLabel,
 } from './src/components/dropdown'
+
+export {
+  SheetVariants,
+  Sheet,
+  SheetTrigger,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetDescription,
+} from './src/components/sheet'

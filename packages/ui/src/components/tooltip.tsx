@@ -4,7 +4,7 @@ import * as radix from '@radix-ui/react-tooltip'
 
 const Styles = cva({
   variants: {
-    type: {
+    base: {
       content: [
         'bg-popover border z-50 overflow-hidden rounded-md',
         'px-3 py-1.5 text-sm text-foreground shadow',
@@ -35,7 +35,7 @@ export const Tooltip = forwardRef<
           ref={ref}
           sideOffset={sideOffset}
           className={cx(
-            Styles({ type: 'content' }),
+            Styles({ base: 'content' }),
             props.className,
           )}
           {...props}

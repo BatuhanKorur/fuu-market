@@ -36,23 +36,22 @@ const config = {
       colors: {
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
-
-        ring: {
-          DEFAULT: 'hsl(var(--ring))',
-        },
-
-        border: {
-          DEFAULT: 'hsl(var(--border))',
-          light: 'hsl(var(--border-light))',
-        },
+        border: 'hsl(var(--border))',
+        ring: 'hsl(var(--ring))',
 
         muted: {
           DEFAULT: 'hsl(var(--muted))',
           foreground: 'hsl(var(--muted-foreground))',
         },
 
+        card: {
+          DEFAULT: 'hsl(var(--card))',
+          foreground: 'hsl(var(--card-foreground))',
+        },
+
         popover: {
           DEFAULT: 'hsl(var(--popover))',
+          foreground: 'hsl(var(--popover-foreground))',
         },
 
         primary: {
@@ -84,6 +83,9 @@ const config = {
           background: 'hsl(var(--green-background))',
           foreground: 'hsl(var(--green-foreground))',
         },
+      },
+      brightness: {
+        80: '.80',
       },
       keyframes: {
         'accordion-down': {

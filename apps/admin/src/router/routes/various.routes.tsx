@@ -1,10 +1,10 @@
-import { Links } from '@/app'
+import { Routes } from '@/app'
 import Account from '@/views/various/Account'
 import System from '@/views/various/System'
 
 export const VariousRoutes = [
   {
-    path: Links.Routes.VARIOUS.ACCOUNT,
+    path: Routes.VARIOUS.ACCOUNT,
     children: [
       {
         index: true,
@@ -13,7 +13,7 @@ export const VariousRoutes = [
     ],
   },
   {
-    path: Links.Routes.VARIOUS.SYSTEM,
+    path: Routes.VARIOUS.SYSTEM,
     children: [
       {
         index: true,

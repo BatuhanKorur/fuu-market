@@ -1,9 +1,9 @@
-import { Links } from '@/app'
+import { Routes } from '@/app'
 import MediaIndex from '@/views/media/MediaIndex'
 
 export const MediaRoutes = [
   {
-    path: Links.Routes.MEDIA.index,
+    path: Routes.MEDIA.index,
     children: [
       {
         index: true,

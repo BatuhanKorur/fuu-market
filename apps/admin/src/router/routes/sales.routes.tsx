@@ -1,9 +1,9 @@
-import { Links } from '@/app'
+import { Routes } from '@/app'
 import SalesIndex from '@/views/sales/SalesIndex'
 
 export const SalesRoutes = [
   {
-    path: Links.Routes.SALES.index,
+    path: Routes.SALES.index,
     children: [
       {
         index: true,

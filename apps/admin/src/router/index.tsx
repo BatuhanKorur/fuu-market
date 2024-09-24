@@ -5,7 +5,8 @@ import { UsersRoutes } from './routes/users.routes'
 import { ProductsRoutes } from './routes/products.routes'
 import { SalesRoutes } from '@/router/routes/sales.routes'
 import { MediaRoutes } from '@/router/routes/media.routes'
-
+import { VariousRoutes } from '@/router/routes/various.routes'
+import Login from '@/views/auth/Login'
 const Routes: ReturnType<typeof createBrowserRouter> = createBrowserRouter([
   {
     path: '',
@@ -19,7 +20,12 @@ const Routes: ReturnType<typeof createBrowserRouter> = createBrowserRouter([
       ...ProductsRoutes,
       ...SalesRoutes,
       ...MediaRoutes,
+      ...VariousRoutes,
     ],
+  },
+  {
+    path: '/login',
+    element: <Login />,
   },
 ])
 

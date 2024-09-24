@@ -1,11 +1,11 @@
 import { forwardRef, ElementRef, ComponentPropsWithoutRef } from 'react'
 import * as radix from '@radix-ui/react-dropdown-menu'
-import { cva, cx, focusWithin } from '../lib'
+import { cva, cx, FocusWithin } from '../lib'
 
 const Styles = cva({
   variants: {
     base: {
-      trigger: ['inline-flex', focusWithin],
+      trigger: ['inline-flex', FocusWithin],
       content: [
         'z-50 bg-popover border rounded-md shadow-md',
         'min-w-[10rem] overflow-hidden p-1 text-popover-foreground shadow-md',

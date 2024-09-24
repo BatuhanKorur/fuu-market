@@ -7,9 +7,9 @@ const Styles = cva({
     base: {
       trigger: [
         'flex flex-1 grow items-center justify-between',
-        'transition-all duration-150 ease-in-out [&[data-state=open]>svg]:rotate-180',
+        'transition-all duration-150 ease-in-out',
       ],
-      triggerIcon: 'h-4 w-4 shrink-0',
+      triggerIcon: 'h-4 w-4 shrink-0 mr-3.5 [data-state=open]:rotate-180',
       content: 'overflow-hidden transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down',
     },
   },

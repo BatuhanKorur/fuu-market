@@ -1,28 +1,29 @@
 @mixin theme {
   :root {
-    --background: 230 50% 98%;
-    --foreground: 230 10% 10%;
+    --background: 0 0% 100%;
+    --foreground: 0 0% 11%;
+    --border: 0 0% 91%;
+    --border-light: 230 20% 90%;
+    --popover: 210 33% 98%;
 
-    --border: 230 10% 90%;
-    --border-light: 230 10% 95%;
-
-    --primary: 230 100% 45%;
+    --muted: 0 0% 95%;
+    --muted-foreground: 0 0% 65%;
   }
 
   .dark {
     --background: 230 8% 10%;
     --foreground: 0 0 98%;
+    --border: 240 5% 25%;
+    --ring: 225 50% 30%;
 
-    --muted: 240 10% 20%;
+    --muted: 240 8% 16%;
     --muted-foreground: 240 10% 40%;
 
+    --card: 228 10% 15%;
+    --card-foreground: 228 5% 98%;
+
     --popover: 240 5% 8%;
-    --ring: 225 50% 30%;
-    --border: 240 5% 25%;
-    --border-light: 240 7% 35%;
-
-
-
+    --popover-foreground: 240 5% 70%;
 
     --primary: 225 67% 50%;
     --primary-background: 220 35% 20%;
@@ -32,15 +33,15 @@
     --secondary-background: 240 9.5% 18%;
     --secondary-foreground: 230 10% 95%;
 
-    --red: 0 90% 55%;
+    --red: 340 70% 35%;
     --red-background: 340 20% 16%;
     --red-foreground: 340 90% 70%;
 
-    --orange: 37 90% 55%;
+    --orange: 27 65% 45%;
     --orange-background: 12 26% 15%;
     --orange-foreground: 27 94% 61%;
 
-    --green: 130 80% 40%;
+    --green: 155 65% 30%;
     --green-background: 170 30% 13%;
     --green-foreground: 155 63% 54%;
   }

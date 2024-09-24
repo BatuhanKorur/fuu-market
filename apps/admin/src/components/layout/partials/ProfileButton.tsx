@@ -7,7 +7,7 @@ import {
   DropdownLabel,
   DropdownSeparator,
 } from '@fuu/ui'
-import { Links } from '@/app'
+import { NavProfileLinks } from '@/app'
 import { NavLink } from '@/components'
 
 export function ProfileButton({ className }: {
@@ -16,7 +16,7 @@ export function ProfileButton({ className }: {
   return (
     <Dropdown>
       <DropdownTrigger className={className}>
-        <Avatar type="square" />
+        <Avatar type="square" src="" />
       </DropdownTrigger>
       <DropdownContent>
         <DropdownLabel>
@@ -26,7 +26,7 @@ export function ProfileButton({ className }: {
           </div>
         </DropdownLabel>
         <DropdownSeparator />
-        { Links.NAV_PROFILE_LINKS.map(link => (
+        { NavProfileLinks.map(link => (
           <DropdownItem key={link.to}>
             <NavLink to={link.to} className="flex items-center space-x-1.5">
               { link.Icon && <link.Icon size={20} /> }

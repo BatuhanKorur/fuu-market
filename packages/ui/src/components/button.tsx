@@ -1,20 +1,20 @@
 import { forwardRef, ComponentPropsWithRef } from 'react'
-import { cva, cx, type VariantProps, focusWithin } from '../lib'
+import { cva, cx, type VariantProps, FocusWithin } from '../lib'
 
 export const ButtonVariants = {
   color: {
-    primary: 'bg-primary text-white hover:brightness-90',
-    secondary: 'bg-secondary text-foreground',
-    ghost: 'bg-transparent hover:bg-muted',
-    outlined: 'border border-border hover:bg-muted',
+    primary: 'bg-primary text-white hover:brightness-90 active:brightness-100',
+    secondary: 'bg-secondary text-foreground hover:brightness-90',
+    ghost: 'bg-transparent hover:bg-muted/85 active:bg-muted/100',
+    outlined: 'border border-border hover:bg-muted/75',
     red: 'bg-red',
     orange: 'bg-orange',
     green: 'bg-green',
   },
   size: {
-    sm: 'h-[36px] px-3 text-sm',
-    md: 'h-[40px] px-3.5 text-base font-[475]',
-    lg: 'h-[46px] px-5 text-md',
+    sm: 'h-8 text-sm px-3 font-[425]',
+    md: 'h-10 text-base px-4 font-[450] tracking-[0.02em]',
+    lg: 'h-12 text-md px-5 font-[475] tracking-[0.025em]',
   },
   icon: {
     none: '',
@@ -26,8 +26,8 @@ export const ButtonVariants = {
 
 const Styles = cva({
   base: [
-    'inline-flex-center trans-150 whitespace-nowrap rounded-md',
-    focusWithin,
+    'inline-flex-center trans-250 whitespace-nowrap rounded-md',
+    FocusWithin,
   ],
   variants: ButtonVariants,
   compoundVariants: [

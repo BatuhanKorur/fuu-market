@@ -1,5 +1,4 @@
 import {
-  Gear,
   Bank,
   Mailbox,
   House,
@@ -8,14 +7,11 @@ import {
   ShoppingBag,
   Wallet,
   Users,
-  type Icon,
+  Circuitry,
+  Sliders,
+  SignOut,
 } from '@phosphor-icons/react'
-
-export interface SidebarLink {
-  label: string
-  to: string
-  Icon: Icon
-}
+import { LinkItem } from '@/types'
 
 export const Routes = {
   DASHBOARD: '/',
@@ -47,7 +43,7 @@ export const Routes = {
   },
 }
 
-export const SIDEBAR_LINKS: SidebarLink[] = [
+export const SidebarLinks: LinkItem[] = [
   {
     label: 'Dashboard',
     to: Routes.DASHBOARD,
@@ -76,11 +72,11 @@ export const SIDEBAR_LINKS: SidebarLink[] = [
 
 ]
 
-export const SIDEBAR_SETTINGS_LINKS: SidebarLink[] = [
+export const SidebarSettingsLinks: LinkItem[] = [
   {
     label: 'General',
     to: `${Routes.SETTINGS.index}/${Routes.SETTINGS.GENERAL}`,
-    Icon: Gear,
+    Icon: Sliders,
   },
   {
     label: 'Financials',
@@ -94,7 +90,7 @@ export const SIDEBAR_SETTINGS_LINKS: SidebarLink[] = [
   },
 ]
 
-export const NAV_PROFILE_LINKS: SidebarLink[] = [
+export const NavProfileLinks: LinkItem[] = [
   {
     label: 'Account',
     to: Routes.VARIOUS.ACCOUNT,
@@ -103,11 +99,11 @@ export const NAV_PROFILE_LINKS: SidebarLink[] = [
   {
     label: 'System',
     to: Routes.VARIOUS.SYSTEM,
-    Icon: Gear,
+    Icon: Circuitry,
   },
   {
     label: 'Logout',
     to: Routes.AUTH.LOGOUT,
-    Icon: Gear,
+    Icon: SignOut,
   },
 ]

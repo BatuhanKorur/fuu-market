@@ -11,6 +11,8 @@ export * from './src/components/popover'
 export * from './src/components/command'
 export * from './src/components/card'
 export * from './src/components/list'
+export * from './src/components/resizable'
+export * from './src/components/text'
 
 // Todo
 export { Avatar, AvatarVariants } from './src/components/avatar'

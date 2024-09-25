@@ -12,9 +12,9 @@ export const ButtonVariants = {
     green: 'bg-green',
   },
   size: {
-    sm: 'h-8 text-sm px-3 font-[425]',
-    md: 'h-10 text-base px-4 font-[450] tracking-[0.02em]',
-    lg: 'h-12 text-md px-5 font-[475] tracking-[0.025em]',
+    sm: 'h-8 text-sm px-3',
+    md: 'h-10 text-[0.85rem] px-4',
+    lg: 'h-[2.875rem] text-base px-5',
   },
   icon: {
     none: '',
@@ -26,7 +26,8 @@ export const ButtonVariants = {
 
 const Styles = cva({
   base: [
-    'inline-flex-center trans-250 whitespace-nowrap rounded-md',
+    'inline-flex-center trans-250 whitespace-nowrap rounded-md font-[430] leading-none',
+    'disabled:cursor-not-allowed disabled:opacity-80',
     FocusWithin,
   ],
   variants: ButtonVariants,
@@ -56,6 +57,7 @@ const Styles = cva({
 
 interface ButtonProps extends ComponentPropsWithRef<'button'> {
   className?: string
+  label?: string
   color?: VariantProps<typeof Styles>['color']
   size?: VariantProps<typeof Styles>['size']
   icon?: VariantProps<typeof Styles>['icon']
@@ -63,5 +65,18 @@ interface ButtonProps extends ComponentPropsWithRef<'button'> {
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, color, size, icon, ...props }, ref) => {
-    return <button ref={ref} className={cx(Styles({ color, size, icon }), className)} {...props} />
+    return (
+      <button
+        ref={ref}
+        className={cx(
+          Styles({ color, size, icon }),
+          className,
+        )}
+        {...props}
+        style={{
+          lineHeight: 0,
+        }}
+      >
+      </button>
+    )
   })

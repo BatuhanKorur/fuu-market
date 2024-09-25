@@ -28,7 +28,7 @@ export const Tooltip = forwardRef<
   return (
     <radix.Provider>
       <radix.Root delayDuration={delay}>
-        <radix.Trigger>
+        <radix.Trigger className="w-full" asChild>
           {props.children}
         </radix.Trigger>
         <radix.Content

@@ -12,10 +12,10 @@ interface SelectProps {
 }
 
 export const Select = forwardRef<HTMLElement, SelectProps>(
-  ({ options, onSelect, size = 'md', ...props }) => {
+  ({ options, onSelect, size = 'md', ...props }, ref) => {
     const [selected, setSelected] = useState<string>('Please select an option')
     return (
-      <div {...props}>
+      <div ref={ref} {...props}>
         <Popover>
           <PopoverTrigger asChild>
             <div className={cx(FormStyles({ size }), 'flex items-center pt-px w-full')}>

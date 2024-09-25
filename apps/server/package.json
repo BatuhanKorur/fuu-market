@@ -18,7 +18,7 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
-    "@fuu/utils": "workspace:*",
+    "@fuu/core": "workspace:*",
     "@fuu/types": "workspace:*",
     "@fuu/tsconfig": "workspace:*",
     "@types/express": "^4.17.13",

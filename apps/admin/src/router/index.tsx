@@ -6,6 +6,7 @@ import { ProductsRoutes } from './routes/products.routes'
 import { SalesRoutes } from '@/router/routes/sales.routes'
 import { MediaRoutes } from '@/router/routes/media.routes'
 import { VariousRoutes } from '@/router/routes/various.routes'
+import { SettingsRoutes } from '@/router/routes/settings.routes'
 import Login from '@/views/auth/Login'
 const Routes: ReturnType<typeof createBrowserRouter> = createBrowserRouter([
   {
@@ -21,6 +22,7 @@ const Routes: ReturnType<typeof createBrowserRouter> = createBrowserRouter([
       ...SalesRoutes,
       ...MediaRoutes,
       ...VariousRoutes,
+      ...SettingsRoutes,
     ],
   },
   {

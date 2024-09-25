@@ -34,7 +34,7 @@ function SidebarHead() {
       className="border-b flex items-center px-4 space-x-2"
       style={{ height: Configs.NAVBAR_HEIGHT }}
     >
-      <img src={logoUrl} alt={Configs.APP_NAME} className="h-6" />
+      <img src={logoUrl} alt={Configs.APP_NAME} className="size-5" />
     </div>
   )
 }
@@ -42,26 +42,35 @@ function SidebarHead() {
 export function SidebarContent() {
   return (
     <div className="mt-2">
-      {SidebarLinks.map(link => <SidebarItem to={link.to} Icon={link.Icon} label={link.label} />)}
+      {SidebarLinks.map(link => (
+        <SidebarItem
+          key={link.to}
+          to={link.to}
+          Icon={link.Icon}
+          label={link.label}
+        />
+      ))}
     </div>
   )
 }
 
-export function SidebarItem({ to, label, Icon }: LinkItem) {
+export function SidebarItem({ to, label, Icon, className }: LinkItem) {
   const { sidebarOpen } = useStore()
-  const [showLabel, setShowLabel] = useState(sidebarOpen)
+  const [open, setOpen] = useState(sidebarOpen)
 
   useEffect(() => {
-    const timer = setTimeout(() => setShowLabel(sidebarOpen), 50)
+    const timer = setTimeout(() => setOpen(sidebarOpen), 50)
     return () => clearTimeout(timer)
   }, [sidebarOpen])
 
   return (
     <NavLink
       to={to}
-      className={cx(
-        'text-foreground rounded-md trans-150 hover:bg-muted',
-        'flex items-center h-10 my-1 mx-1.5 space-x-2 pl-2',
+      className={({ isActive }) => cx(
+        'rounded-md trans-150 hover:bg-muted',
+        'flex items-center h-10 my-1 mx-1.5 space-x-2',
+        isActive ? 'text-primary-foreground' : 'text-foreground',
+        className,
       )}
     >
       {sidebarOpen
@@ -71,7 +80,7 @@ export function SidebarItem({ to, label, Icon }: LinkItem) {
               <Icon size={24} />
             </Tooltip>
           )}
-      {showLabel && <p className="text-base font-[425]">{label}</p>}
+      {open && <p className="text-base font-[425]">{label}</p>}
     </NavLink>
   )
 }
@@ -89,7 +98,12 @@ export function SidebarFooter() {
         </AccordionTrigger>
         <AccordionContent>
           {SidebarSettingsLinks.map(link => (
-            <SidebarItem to={link.to} Icon={link.Icon} label={link.label} />
+            <SidebarItem
+              key={link.to}
+              to={link.to}
+              Icon={link.Icon}
+              label={link.label}
+            />
           ))}
         </AccordionContent>
       </AccordionItem>

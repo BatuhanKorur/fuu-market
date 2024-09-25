@@ -26,10 +26,10 @@ export const FormStyleVariants = {
 }
 
 export const FormStyles = cva({
-  base: 'bg-transparent text-foreground flex items-center',
+  base: 'bg-transparent text-foreground flex items-center w-full',
   variants: FormStyleVariants,
   defaultVariants: {
     size: 'md',
-    styled: 'default',
+    styled: 'none',
   },
 })

@@ -17,6 +17,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-hook-form": "^7.53.0",
+    "react-hot-toast": "^2.4.1",
     "react-router-dom": "^6.26.2",
     "zod": "^3.23.8",
     "zustand": "^5.0.0-rc.2"
@@ -25,6 +26,7 @@
     "@fuu/tsconfig": "workspace:*",
     "@fuu/types": "workspace:*",
     "@fuu/ui": "workspace:*",
+    "@fuu/core": "workspace:*",
     "@vitejs/plugin-react": "^4.3.1",
     "autoprefixer": "^10.4.20",
     "cva": "1.0.0-beta.1",

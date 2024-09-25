@@ -12,8 +12,8 @@ export function Navbar() {
         height: Configs.NAVBAR_HEIGHT,
       }}
     >
-      <div>
-        <p>i</p>
+      <div className="pl-6">
+        <input type="search" className="text-base bg-transparent outline-none" placeholder="Search anything..." />
       </div>
       <div className="flex items-center pr-3 space-x-2">
         <NotificationsButton />

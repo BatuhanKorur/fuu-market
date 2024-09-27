@@ -17,18 +17,19 @@
     "node": ">=20"
   },
   "dependencies": {
-    "eslint": "^9.11.0",
     "@fuu/eslint": "workspace:*",
+    "eslint": "^9.11.1",
     "turbo": "^2.1.2"
   },
   "devDependencies": {
-    "@types/node": "^22.5.5",
-    "@types/react": "^18.3.8",
-    "@types/react-dom": "^18.3.0",
-    "@types/react-router-dom": "^5.3.3",
     "@types/cors": "^2.8.17",
-    "@types/express": "^4.17.21",
-    "@types/morgan": "^1.9.9"
+    "@types/express": "^5.0.0",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^22.7.2",
+    "@types/nodemailer": "^6.4.16",
+    "@types/react": "^18.3.9",
+    "@types/react-dom": "^18.3.0",
+    "@types/react-router-dom": "^5.3.3"
   },
   "keywords": [
     "digital marketplace",

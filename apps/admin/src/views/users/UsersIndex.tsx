@@ -1,7 +1,15 @@
+import { Page, DataTable } from '@/components'
+import { UserColumns } from './user.cols'
+import { Api, useQuery } from '@/app'
+import { ApiRoutes } from '@fuu/types'
 export default function UsersIndex() {
+  const query = useQuery({
+    queryKey: [ApiRoutes.USERS],
+    queryFn: () => Api.get(ApiRoutes.USERS),
+  })
   return (
-    <div>
-      <p>User Index</p>
-    </div>
+    <Page title="Users">
+      <DataTable columns={UserColumns} query={query} />
+    </Page>
   )
 }

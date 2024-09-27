@@ -2,11 +2,14 @@
   "extends": "@fuu/tsconfig/react.json",
   "compilerOptions": {
     "esModuleInterop": true,
+    "noImplicitAny": false,
   },
   "include": [
-    "src/components/**/*.ts",
-    "src/components/**/*.tsx",
-    "src/lib/**/*.ts"
+    "assets/tailwind.config.js",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.js",
+    "src/**/*.jsx"
   ],
   "exclude": ["node_modules"],
   "jsxImportSource": "react"

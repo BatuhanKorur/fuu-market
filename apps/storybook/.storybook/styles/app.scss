@@ -1,0 +1,39 @@
+html, body {
+  font-family: 'Inter', sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+}
+
+// @import '../../../admin/src/assets/styles.scss';
+//@import '@fuu/ui/assets/theme.scss';
+//@import './docs.scss';
+//#root {
+//  .sidebar-container {
+//    background-color: hsl(var(--popover));
+//  }
+//  .sb-bar {
+//    background-color: hsl(var(--background));
+//  }
+//  #storybook-explorer-searchfield {
+//    box-shadow: none !important;
+//  }
+//  .sidebar-header img {
+//    height: 38px;
+//  }
+//}
+
+//#storybook-docs {
+//  .sbdocs-wrapper {
+//    @apply p-8;
+//  }
+//  .sbdocs-content {
+//    @apply max-w-[720px] mx-auto;
+//  }
+//  .sbdocs-title {
+//    @apply text-[40px] mb-3.5;
+//  }
+//  h2 {
+//    @apply text-[20px] leading-7 tracking-[0.1px] text-pretty;
+//    @apply border-b-0 mb-0;
+//  }
+//}

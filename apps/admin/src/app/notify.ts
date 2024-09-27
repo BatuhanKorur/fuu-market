@@ -1,5 +1,5 @@
 import { toast } from 'react-hot-toast'
-import { time } from '@fuu/core'
+import { Time } from '@fuu/core'
 
 const NotifyStyle = {
   backgroundColor: 'hsl(var(--muted))',
@@ -8,13 +8,13 @@ const NotifyStyle = {
 }
 
 const DefaultOptions = {
-  duration: time.seconds(5).toMs,
+  duration: Time.seconds(5).toMs,
   position: 'top-center',
 }
 
 export const notify = (message: string) => {
   toast(message, {
-    duration: time.seconds(10).toMs,
+    duration: Time.seconds(10).toMs,
     style: NotifyStyle,
   })
 }

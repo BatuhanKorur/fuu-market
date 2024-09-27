@@ -1,0 +1,48 @@
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title= title
+    style.
+      h1, h2, h3, h4, h5, p, span {
+        margin-block: 0
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #191c21;
+        margin: 20px;
+        padding: 0;
+        color: #FAFAFA;
+      }
+      .container {
+        width: 100%;
+        max-width: 640px;
+        margin: 0 auto;
+      }
+      .header {
+        display: flex;
+        height: 110px;
+        img {
+          width: auto;
+          max-height: 40px;
+          margin: auto;
+        }
+      }
+      .content {
+        border-radius: 10px;
+        background-color: #242733;
+        padding: 20px;
+        box-shadow: 0 0 10px hsla(0, 0%, 10%, 0.1);
+      }
+      h1 {
+        margin-block: 0;
+      }
+  body
+    .container
+      .header
+        img(src="http://localhost:4000/storage/assets/logo-full-white.png")
+      .content
+        block content
+      .footer
+        p &copy; 2023 My Company. All rights reserved.

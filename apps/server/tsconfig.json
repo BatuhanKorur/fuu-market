@@ -3,7 +3,9 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/*": ["app/*"]
+      "@/*": ["app/*"],
+      "@views/*": ["views/*"],
+      "@storage/*": ["storage/*"],
     }
   },
   "include": ["app/**/*.ts", "app/**/*.tsx", "app/**/*.d.ts"],

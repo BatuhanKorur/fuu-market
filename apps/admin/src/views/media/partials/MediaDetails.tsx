@@ -1,5 +1,5 @@
 import { InputCopy } from '@/components/InputCopy.tsx'
-import { TextLabel, TextStack, Button, FormField, Input, Tooltip } from '@fuu/ui'
+import { Label, Button, Input, Tooltip } from '@fuu/ui'
 import { ArrowSquareOut, DownloadSimple } from '@phosphor-icons/react'
 import { useForm, useZod, zod } from '@/app'
 export function MediaDetails() {
@@ -28,25 +28,25 @@ export function MediaDetails() {
       <div className="border-t p-3.5">
         <p className="text-lg font-semibold mb-2">auth-bg.jpg</p>
         <div className="space-y-3">
-          <div>
-            <TextLabel>URL</TextLabel>
-            <Tooltip tip="Copy URL">
-              <InputCopy value="http://localhost:4000/storage/assets/very-long-path-auth-bg.avif" />
-            </Tooltip>
-          </div>
-          <FormField label="Name">
-            <Input {...register('name')} />
-          </FormField>
-          <FormField label="Alt Text">
-            <Input />
-          </FormField>
+          {/* <div> */}
+          {/*  /!* <TextLabel>URL</TextLabel> *!/ */}
+          {/*  <Tooltip tip="Copy URL"> */}
+          {/*    <InputCopy value="http://localhost:4000/storage/assets/very-long-path-auth-bg.avif" /> */}
+          {/*  </Tooltip> */}
+          {/* </div> */}
+          {/* <FormField label="Name"> */}
+          {/*  <Input {...register('name')} /> */}
+          {/* </FormField> */}
+          {/* <FormField label="Alt Text"> */}
+          {/*  <Input /> */}
+          {/* </FormField> */}
           <div className="flex space-x-8">
-            <TextStack label="Format">JPG</TextStack>
-            <TextStack label="Size">1.2 Mb</TextStack>
+            {/* <TextStack label="Format">JPG</TextStack> */}
+            {/* <TextStack label="Size">1.2 Mb</TextStack> */}
           </div>
-          <TextStack label="Dimensions">1920x1080</TextStack>
-          <TextStack label="Uploaded at">Hello</TextStack>
-          <TextStack label="Updated at">WHats up</TextStack>
+          {/* <TextStack label="Dimensions">1920x1080</TextStack> */}
+          {/* <TextStack label="Uploaded at">Hello</TextStack> */}
+          {/* <TextStack label="Updated at">WHats up</TextStack> */}
         </div>
         <div className="mt-4 grid grid-cols-2 gap-2">
           <Button size="lg" color="secondary" disabled={!isValid} className="col-span-2">Save Changes</Button>

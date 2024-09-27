@@ -1,0 +1,7 @@
+@import '@fuu/ui/assets/theme.scss';
+@tailwind base;
+@layer base {
+  @include theme;
+}
+@tailwind components;
+@tailwind utilities;

@@ -1,1 +1,2 @@
-export { Time as time } from './src/Time'
+export * from './libs/Time'
+export * from './libs/Logger'

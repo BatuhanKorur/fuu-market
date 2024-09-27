@@ -1,7 +1,8 @@
 import eslint from '@eslint/js'
 import tslint from 'typescript-eslint'
 import stylistic from '@stylistic/eslint-plugin'
-import globals from 'globals';
+import globals from 'globals'
+import ignores from './ignores.js'
 
 export const defaults = [
   eslint.configs.recommended,
@@ -27,23 +28,5 @@ export const defaults = [
       sourceType: 'module',
     },
   },
-  {
-    ignores: [
-      '**/node_modules',
-      '**/dist',
-      '**/package-lock.json',
-      '**/pnpm-lock.yaml',
-      '**/output',
-      '**/temp',
-      '**/.temp',
-      '**/.next',
-      '**/.vercel',
-      '**/.vscode',
-      '**/.git',
-      '**/.idea',
-      '**/.cache',
-      '**/.output',
-      '**/*.min.*',
-    ],
-  },
+  { ignores },
 ]

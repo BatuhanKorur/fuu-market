@@ -1,1 +1,1 @@
-export { default } from '@fuu/ui/tailwind.config'
+export { default } from '@fuu/ui/assets/tailwind.config.js'

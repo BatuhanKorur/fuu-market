@@ -1,14 +1,20 @@
 {
   "name": "@fuu/ui",
-  "description": "Fuu Market | UI Components",
   "version": "1.0.0",
+  "description": "Fuu Market | Design System and UI Components",
+  "author": "Batuhan Korur <mail@batuhan.io> (https://batuhan.io)",
+  "license": "MIT",
   "type": "module",
   "private": true,
   "dependencies": {
+    "@phosphor-icons/react": "^2.1.7",
     "@radix-ui/react-accordion": "^1.2.0",
     "@radix-ui/react-dialog": "^1.1.1",
     "@radix-ui/react-dropdown-menu": "^2.1.1",
     "@radix-ui/react-popover": "^1.1.1",
+    "@radix-ui/react-tabs": "^1.1.0",
+    "@radix-ui/react-toggle": "^1.1.0",
+    "@radix-ui/react-toggle-group": "^1.1.0",
     "@radix-ui/react-tooltip": "^1.1.2",
     "cmdk": "^1.0.0",
     "react-hook-form": "^7.53.0",
@@ -17,7 +23,7 @@
   "devDependencies": {
     "@fuu/tsconfig": "workspace:*",
     "@fuu/types": "workspace:*",
-    "@phosphor-icons/react": "^2.1.7",
+    "@storybook/react": "^8.3.3",
     "autoprefixer": "^10.4.20",
     "cva": "1.0.0-beta.1",
     "postcss": "^8.4.47",
@@ -28,8 +34,7 @@
     "typescript": "^5.6.2"
   },
   "exports": {
-    "./postcss.config": "./postcss.config.mjs",
-    "./tailwind.config": "./tailwind.config.ts",
-    ".": "./index.ts"
+    ".": "./index.ts",
+    "./assets/*": "./assets/*"
   }
 }

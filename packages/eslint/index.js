@@ -1,14 +1,16 @@
 // Base eslint configurations
 import { defaults } from './src/defaults.js'
-import { style } from './src/style.js'
 
 // Plugins and rules
-import { reactPlugin } from "./plugins/react.plugin.js";
-import { typescriptPlugin } from "./plugins/typescript.plugin.js";
+import { reactPlugin } from './src/plugins/react.plugin.js'
+import { typescriptPlugin } from './src/plugins/typescript.plugin.js'
+import { stylisticPlugin } from './src/plugins/stylistic.plugin.js'
+import { unicornPlugin } from './src/plugins/unicorn.plugin.js'
 
 export default [
   ...defaults,
-  style,
   reactPlugin,
-  typescriptPlugin
+  typescriptPlugin,
+  stylisticPlugin,
+  unicornPlugin,
 ]

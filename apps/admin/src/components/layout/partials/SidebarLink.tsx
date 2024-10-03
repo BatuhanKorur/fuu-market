@@ -1,7 +1,7 @@
 import { NavLink, NavLinkProps } from 'react-router-dom'
 import { type Icon } from '@phosphor-icons/react'
 import { cx, useStore } from '@/app'
-import { FocusWithin, Tooltip } from '@fuu/ui'
+import { FocusRingWithin, Tooltip } from '@fuu/ui'
 import { useEffect, useState } from 'react'
 
 interface SidebarLinkProps extends NavLinkProps {
@@ -26,7 +26,7 @@ export function SidebarLink({ to, label, Icon, iconSize = 24, className, ...prop
       to={to}
       className={cx(
         'group flex items-center space-x-4 py-3 px-3.5 trans-200 hover:opacity-80',
-        FocusWithin,
+        FocusRingWithin,
         className,
       )}
       {...props}

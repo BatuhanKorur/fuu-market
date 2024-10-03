@@ -11,4 +11,12 @@ export const UserColumns = [
     header: 'Email',
     accessorKey: 'email',
   },
+  {
+    header: 'Created at',
+    accessorKey: 'createdAt',
+  },
+  {
+    header: 'Last Update',
+    accessorKey: 'lastUpdate',
+  },
 ]

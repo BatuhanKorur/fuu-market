@@ -1,24 +1,8 @@
-@import 'css/theme';
-@import 'css/globals';
+@import '@fuu/ui/assets/theme';
+@import '@fuu/ui/assets/globals';
 @tailwind base;
 @layer base {
   @include theme;
-  @font-face {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 1 999;
-    src: url('./fonts/Inter.ttf') format('truetype');
-  }
 }
 @tailwind components;
 @tailwind utilities;
-
-* {
-  font-family: 'Inter', sans-serif;
-  box-sizing: border-box;
-  backface-visibility: hidden;
-  transform: translate3d(0, 0, 0);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  @apply border-border;
-}

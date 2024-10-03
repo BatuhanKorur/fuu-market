@@ -1,6 +1,6 @@
 import { forwardRef, ElementRef, ComponentPropsWithoutRef } from 'react'
 import * as Radix from '@radix-ui/react-dropdown-menu'
-import { cx, FocusWithin, NoOutlines, SlideIn, StateOpenClose } from '../../lib'
+import { cx, FocusRingWithin, NoOutlines, SlideIn, StateAnimationZoom } from '../../lib'
 
 export const Dropdown = Radix.Root
 
@@ -10,7 +10,7 @@ export const DropdownTrigger = forwardRef<ElementRef<typeof Radix.Trigger>, Comp
       ref={ref}
       className={cx(
         'inlineFlex',
-        FocusWithin,
+        FocusRingWithin,
         className,
       )}
       {...props}
@@ -27,7 +27,7 @@ export const DropdownContent = forwardRef<ElementRef<typeof Radix.Content>, Comp
         className={cx(
           'z-50 bg-popover border rounded-md shadow-md',
           'min-w-[10rem] overflow-hidden p-1 text-popover-foreground shadow-md',
-          StateOpenClose,
+          StateAnimationZoom,
           SlideIn,
           className,
         )}

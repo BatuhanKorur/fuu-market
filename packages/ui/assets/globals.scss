@@ -1,0 +1,19 @@
+* {
+  font-family: 'Switzer', sans-serif;
+  box-sizing: border-box;
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @apply border-border !important;
+}
+
+
+html {
+  @apply bg-background;
+  @apply text-foreground;
+}
+
+::selection {
+  @apply bg-muted-foreground/25;
+}

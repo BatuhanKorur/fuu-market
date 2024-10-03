@@ -8,5 +8,6 @@ export function useZod<T extends zod.ZodRawShape>(shape: T) {
   return {
     schema,
     resolver,
+    zod,
   }
 }

@@ -68,7 +68,7 @@ export function SidebarItem({ to, label, Icon, className }: LinkItem) {
       to={to}
       className={({ isActive }) => cx(
         'rounded-md trans-150 hover:bg-muted',
-        'flex items-center h-10 my-1 mx-1.5 space-x-2',
+        'flex items-center h-10 my-1 mx-1.5 pl-2 space-x-2',
         isActive ? 'text-primary-foreground' : 'text-foreground',
         className,
       )}
@@ -80,7 +80,7 @@ export function SidebarItem({ to, label, Icon, className }: LinkItem) {
               <Icon size={24} />
             </Tooltip>
           )}
-      {open && <p className="text-base font-[425]">{label}</p>}
+      {open && <p className="text-sm font-[425]">{label}</p>}
     </NavLink>
   )
 }
@@ -91,7 +91,7 @@ export function SidebarFooter() {
     <Accordion type="single" collapsible className="border-t">
       <AccordionItem value="settings">
         <AccordionTrigger showCaret={sidebarOpen}>
-          <div className="flex items-center space-x-2 px-3.5 py-4 trans-200 hover:opacity-75">
+          <div className="flex items-center space-x-2 pl-2.5 border-b-0 trans-200 hover:opacity-75">
             <Gear size={24} />
             <span className={sidebarOpen ? 'inline-block' : 'hidden'}>Settings</span>
           </div>
@@ -103,6 +103,7 @@ export function SidebarFooter() {
               to={link.to}
               Icon={link.Icon}
               label={link.label}
+              className="ml-0.5"
             />
           ))}
         </AccordionContent>

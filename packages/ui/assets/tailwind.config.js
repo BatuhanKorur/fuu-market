@@ -15,25 +15,63 @@ const config = {
       ...breakpoints,
     },
     fontFamily: {
-      sans: ['Inter', 'Helvetica', 'sans-serif'],
+      sans: ['Switzer', 'Inter', 'Helvetica', 'sans-serif'],
+      code: ['JetBrainsMono', 'monospace'],
     },
     extend: {
       fontSize: {
-        '2xs': ['0.8rem'],
-        'xs': ['0.85rem'],
-        'sm': ['0.9rem'],
-        'base': ['0.95rem', {
+        '2xs': ['0.785rem', {
           letterSpacing: '0.01em',
+          lineHeight: '1.25em',
         }],
-        'md': ['1rem'],
-        'lg': ['1.1rem'],
-        'xl': ['1.2rem'],
-        '2xl': ['1.35rem'],
-        '3xl': ['1.5rem'],
-        '4xl': ['1.75rem'],
-        '5xl': ['2rem'],
-        '6xl': ['2.25rem'],
-        '7xl': ['2.5rem'],
+        'xs': ['0.825rem', {
+          letterSpacing: '0.01em',
+          lineHeight: '1.25em',
+        }],
+        'sm': ['0.875rem', {
+          letterSpacing: '0.01em',
+          lineHeight: '1.25em',
+        }],
+        'base': ['0.94rem', {
+          letterSpacing: '0.01em',
+          lineHeight: '1.25em',
+        }],
+        'md': ['1rem', {
+          letterSpacing: '0.01em',
+          lineHeight: '1.25em',
+        }],
+        'lg': ['1.125rem', {
+          letterSpacing: '0.01em',
+          lineHeight: '1.25em',
+        }],
+        'xl': ['1.25rem', {
+          letterSpacing: '0.01em',
+          lineHeight: '1.25em',
+        }],
+        '2xl': ['1.375rem', {
+          letterSpacing: '0.01em',
+          lineHeight: '1.25em',
+        }],
+        '3xl': ['1.5rem', {
+          letterSpacing: '0.01em',
+          lineHeight: '1.25em',
+        }],
+        '4xl': ['1.75rem', {
+          letterSpacing: '0.01em',
+          lineHeight: '1.25em',
+        }],
+        '5xl': ['2rem', {
+          letterSpacing: '0.01em',
+          lineHeight: '1.25em',
+        }],
+        '6xl': ['2.25rem', {
+          letterSpacing: '0.01em',
+          lineHeight: '1.25em',
+        }],
+        '7xl': ['2.5rem', {
+          letterSpacing: '0.01em',
+          lineHeight: '1.25em',
+        }],
       },
       colors: {
         background: 'hsl(var(--background))',
@@ -85,9 +123,6 @@ const config = {
           background: 'hsl(var(--green-background))',
           foreground: 'hsl(var(--green-foreground))',
         },
-      },
-      brightness: {
-        80: '.80',
       },
       keyframes: {
         'accordion-down': {

@@ -3,17 +3,7 @@ import * as Radix from '@radix-ui/react-accordion'
 import { CaretDown } from '@phosphor-icons/react'
 import { cx } from '../../lib'
 
-export const Accordion = forwardRef<ElementRef<typeof Radix.Root>, ComponentPropsWithoutRef<typeof Radix.Root>>(
-  // @ts-ignore
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  ({ collapsible, ...props }, ref) => {
-    return (
-      <Radix.Root
-        ref={ref}
-        {...props}
-      />
-    )
-  })
+export const Accordion = Radix.Root
 
 export const AccordionItem = forwardRef<ElementRef<typeof Radix.Item>, ComponentPropsWithoutRef<typeof Radix.Item>>(
   ({ className, ...props }, ref) => (

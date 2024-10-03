@@ -1,6 +1,6 @@
 import { forwardRef, ElementRef, ComponentPropsWithoutRef } from 'react'
 import * as Radix from '@radix-ui/react-tooltip'
-import { cx, SlideIn, StateOpenClose } from '../../lib'
+import { cx, SlideIn, StateAnimationZoom } from '../../lib'
 
 interface TooltipProps {
   /** Hello */
@@ -31,7 +31,7 @@ export const Tooltip = forwardRef<ElementRef<typeof Radix.Content>, ComponentPro
               'px-3 py-1.5 text-sm text-foreground',
               'z-[500] pointer-events-none',
               SlideIn,
-              StateOpenClose,
+              StateAnimationZoom,
               className,
             )}
             {...props}

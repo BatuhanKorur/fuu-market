@@ -5,7 +5,15 @@ export const NoOutlines = [
   'active:outline-none',
 ].join(' ')
 
-export const FocusWithin = [
+export const FocusRing = [
+  NoOutlines,
+  'focus:ring-2',
+  'focus:ring-ring',
+  'focus:ring-offset-2',
+  'focus:ring-offset-background',
+].join(' ')
+
+export const FocusRingWithin = [
   NoOutlines,
   'focus-within:ring-2',
   'focus-within:ring-ring',
@@ -13,7 +21,7 @@ export const FocusWithin = [
   'focus-within:ring-offset-background',
 ].join(' ')
 
-export const FocusVisible = [
+export const FocusRingVisible = [
   NoOutlines,
   'focus-visible:ring-2',
   'focus-visible:ring-ring',
@@ -21,12 +29,16 @@ export const FocusVisible = [
   'focus-visible:ring-offset-background',
 ].join(' ')
 
-export const StateOpenClose = [
+export const StateAnimation = [
   'data-[state=open]:animate-in',
   'data-[state=open]:fade-in-0',
-  'data-[state=open]:zoom-in-95',
   'data-[state=closed]:animate-out',
   'data-[state=closed]:fade-out-0',
+].join(' ')
+
+export const StateAnimationZoom = [
+  StateAnimation,
+  'data-[state=open]:zoom-in-95',
   'data-[state=closed]:zoom-out-95',
 ].join(' ')
 
@@ -42,4 +54,9 @@ export const Disabled = [
   'data-[disabled]:opacity-50',
   'disabled:pointer-events-none',
   'disabled:opacity-50',
+].join(' ')
+
+export const DisabledData = [
+  'data-[disabled=true]:pointer-events-none',
+  'data-[disabled=true]:opacity-50',
 ].join(' ')
